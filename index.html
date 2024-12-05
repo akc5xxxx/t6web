@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Explorer</title>
+    <link rel="stylesheet" href="t6.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>🌎 Country Explorer</h1>
+        <p>Search for a country to explore details, explore by region, or get a random country:</p>
+        <div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
+            <input type="text" id="countryInput" list="autocomplete" placeholder="Enter country name">
+            <datalist id="autocomplete"></datalist>
+            <button onclick="fetchCountry()">Search</button>
+            <button onclick="getRandomCountry()">Random Country</button>
+            <select id="regionDropdown" onchange="fetchByRegion(this.value)">
+                <option value="" disabled selected>Select a region</option>
+                <option value="Africa">Africa</option>
+                <option value="Americas">Americas</option>
+                <option value="Asia">Asia</option>
+                <option value="Europe">Europe</option>
+                <option value="Oceania">Oceania</option>
+            </select>
+        </div>
+        <div id="results"></div>
+        <div id="compare"></div>
+        <div id="trivia"></div>
+        <div id="history"></div>
+        <div id="favorites"></div>
+    </div>
+    <script src="t6.js"></script>
+</body>
+</html>

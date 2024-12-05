@@ -1,0 +1,190 @@
+/* General Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('./a.webp'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Fix the background while scrolling */
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Main Container */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background */
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Stronger shadow for depth */
+    text-align: center;
+    color: #f9f9f9;
+}
+
+/* Inputs and Dropdown Styling */
+input, select {
+    padding: 10px;
+    width: 70%;
+    margin: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+}
+
+/* Dropdown Specific Styles */
+select {
+    width: auto;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Dropdown Hover and Focus Effects */
+select:hover,
+select:focus {
+    background-color: rgba(0, 0, 0, 0.9);
+    border-color: #007BFF;
+    color: #fff;
+}
+
+/* Buttons Styling */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+/* Country Card Styling */
+.country-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    text-align: left;
+    gap: 20px;
+    color: #fff;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.country-card img {
+    width: 80px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.country-card h2 {
+    margin: 0 0 10px;
+    font-size: 1.5rem;
+    color: #f9f9f9;
+}
+
+.country-card p {
+    margin: 5px 0;
+}
+
+/* Search History */
+#history, #favorites, #trivia, #compare {
+    margin-top: 20px;
+    text-align: left;
+}
+
+#history h3, #favorites h3 {
+    font-size: 1.2rem;
+    color: #f9f9f9;
+}
+
+/* History Button with Flags */
+.history-button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    color: #f9f9f9;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.history-button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #000;
+}
+
+
+.history-flag {
+    width: 80px; 
+    height: 60px; 
+    border-radius: 5px; /* Slightly rounded corners */
+    margin-right: 10px; /* Add spacing between the flag and text */
+    vertical-align: middle; /* Align flag with text */
+}
+
+
+/* Trivia Section */
+#trivia {
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+
+/* Comparison Section */
+#compare {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #f9f9f9;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#compare p {
+    margin: 0;
+    font-weight: bold;
+    color: #00FF7F;
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
